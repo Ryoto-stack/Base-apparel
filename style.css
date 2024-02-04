@@ -1,0 +1,95 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Josefin Sans", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  width: 1440px;
+}
+
+main {
+  height: 800px;
+  width: 1440px;
+  flex-direction: row;
+  display: flex;
+  background-image: url("images/bg-pattern-desktop.svg");
+  background-size: contain;
+}
+.logo {
+  height: 40px;
+  width: 190px;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 150px;
+}
+
+.welcome img {
+  margin-bottom: 100px;
+}
+
+.we {
+  font-weight: 300;
+  letter-spacing: 15px;
+  font-size: 60px;
+  color: hsl(0, 36%, 70%);
+}
+
+.soon {
+  font-weight: 600;
+  font-size: 70px;
+  letter-spacing: 15px;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 16px;
+  color: hsl(0, 36%, 70%);
+  padding-right: 60px;
+  letter-spacing: 0.5px;
+  line-height: 23px;
+  margin-bottom: 80px;
+}
+
+.wrapper {
+  width: 500px;
+  max-width: 100%;
+  position: relative;
+}
+
+.wrapper input {
+  background: transparent;
+  border: 2px solid hsl(0, 36%, 70%);
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  width: 100%;
+  outline: none;
+}
+
+.wrapper button {
+  background-image: linear-gradient(to right, hsl(0, 100%, 89%), hsl(0, 96%, 79%));
+  border-radius: 50px;
+  border: none;
+  height: 100%;
+  width: 90px;
+  position: absolute;
+  right: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.wrapper button:active{
+  background-color: hsl(0, 93%, 68%);
+}
+
+::placeholder{
+  color: hsl(0, 36%, 70%);
+  font-weight: 400;
+}
